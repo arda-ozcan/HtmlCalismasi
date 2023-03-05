@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute-Selector</title>
+    <style>
+        /* a[target] {
+            color: azure;
+            background-color: brown;
+        }   
+        [class] {
+            color: red;
+            background-color: yellow;
+        } 
+        /*
+
+
+        /* AYRI AYRI SINIF SEÇEBİLİRİZ */
+        /* [class = "active"] {
+            color: red;
+            background-color: yellow;
+        }
+        a[class = "active"] {
+            color: white;
+            background-color: blue;
+        } */ 
+
+
+        /* İÇERİSİNDE ACTİVE GECEN BUTUN SINIFLARI KAPSAR */
+        /* [class *= "active"] {
+            color: white;
+            background-color: blue;
+        } */
+
+        /* İÇİNDE SALT ACTİVE OLANLARI SEÇER. MESELA ACTİVE-SPAN OLURSA SEÇMEZ */
+        /* [class ~= "active"] {
+            color: white;
+            background-color: blue;
+        } */
+
+        /* BAŞLANGIÇTA ACTİVE OLANLARI SEÇER MESELA class="span text active" OLURSA SEÇMEZ */
+        /* [class |= "active"] {
+            color: white;
+            background-color: blue;
+        } */
+
+        /* ÜSTTEKİ İLE AYNI TEK FARKI BOŞLUĞU DİKKATE ALMIYOR */
+        /* [class ^= "active"] {
+            color: white;
+            background-color: blue;
+        } */
+
+        /* ACTİVE SINIFINI SONDA ARAR, EĞER BAŞTAYSA ONU DAHİL ETMEZ */
+        [class $= "active"] {
+            color: white;
+            background-color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <span class="active-span text">text</span>
+
+    <nav>
+        <a href="" target="_blank">home</a>
+        <a href="" class="active">about</a>
+        <a href="" class="link">contact</a>
+    </nav>
+</body>
+</html>
