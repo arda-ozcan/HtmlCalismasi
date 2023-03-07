@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em rem units</title>
+    <style>
+ 
+        /* #kutu-1 p {
+            font-size: 2rem;
+        }
+        #kutu-1 h2 {
+            font-size: 3rem;
+        } */
+
+        html {
+            /* 62.5% yapmamızın sebebi, eğer kullanıcı tarayıcı ayarlarından yazı boyutunu değiştirirse bunun sitemizde aktif olarak çalışabilmesidir. */
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.5rem;
+        }
+
+        @media (min-width:576px) {
+            html {
+                font-size: 12px;
+            }
+        }
+        @media (min-width:768px) {
+            html {
+                font-size: 14px;
+            }
+
+            .kutu-1 h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="kutu-1">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit deleniti, provident facilis nostrum repudiandae excepturi aliquid voluptas quisquam sapiente, deserunt incidunt! Modi libero quo obcaecati dignissimos facere, commodi neque dolor.</p>
+    </div>
+
+    <div id="kutu-2">
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit deleniti, provident facilis nostrum repudiandae excepturi aliquid voluptas quisquam sapiente, deserunt incidunt! Modi libero quo obcaecati dignissimos facere, commodi neque dolor.</p>
+    </div>
+</body>
+</html>
