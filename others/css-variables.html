@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <style>
+        /* global kapsam */
+        :root {
+            --gray: #878f99;
+            --onlyWhite: #fff;
+        }
+        body {
+            --gray: #3f8153;
+            background-color: var(--gray);
+        }
+
+        h1 {
+            color: var(--onlyWhite);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--gray);
+        }
+
+        .container {
+            color: var(--gray);
+            background-color: var(--onlyWhite);
+            padding: 7px;
+        }
+
+        button {
+            background-color: var(--onlyWhite);
+            color: var(--gray);
+            border: 1px solid var(--gray);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+
+    <div class="container">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, inventore hic corrupti magnam, eius adipisci vero earum atque est id tempora beatae nemo sit doloremque sed repudiandae voluptates! Vel, amet!</p>
+        <div>
+            <button>ok</button>
+            <button>cancel</button>
+        </div>
+    </div>
+    
+</body>
+</html>
